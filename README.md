@@ -49,6 +49,14 @@ You can optionally use `yarn _build` instead to skip the tests and the lint scri
 
 `yarn start`
 
+Or by specifying an instruction file:
+
+`yarn start file=./data/cleaning-instruction-10000.txt`
+
+Or directly without using yarn:
+
+`node . file=./data/cleaning-instruction-10000.txt`
+
 [⇧ Table of content ⇧](#table-of-content)
 
 ## Run the app in a development environment
@@ -66,6 +74,14 @@ You can optionally use `yarn _watch` instead to skip the tests and the lint scri
 - You can run the app without watching for changes by running:
 
 `yarn dev`
+
+Or by specifying an instruction file:
+
+`yarn dev file=./data/cleaning-instruction-10000.txt`
+
+Or directly without using yarn:
+
+`node_modules/.bin/ts-node src/index.ts file=./data/cleaning-instruction-10000.txt`
 
 [⇧ Table of content ⇧](#table-of-content)
 
