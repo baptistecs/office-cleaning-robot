@@ -1,0 +1,13 @@
+{
+  "name": "robot-cleaner",
+  "version": "1.0.0",
+  "description": "Simulation of an office cleaning robot, getting instructions from a file. It should display the total area (unique zones) once it's done.",
+  "main": "index.js",
+  "repository": "github:baptistecs/office-cleaning-robot",
+  "author": "Baptiste Clarey Sjöstrand",
+  "license": "UNLICENSED",
+  "private": true,
+  "keywords": [
+    "node.js"
+  ]
+}
