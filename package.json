@@ -12,17 +12,23 @@
     "typescript",
     "prettier",
     "eslint",
+    "jasmine",
+    "nodemon",
     "robot",
     "cleaner",
     "office",
     "cleaning"
   ],
   "scripts": {
+    "_build": "yarn clean && echo 'Build...' && tsc && echo 'completed'",
+    "_watch": "nodemon --ext ts --exec 'yarn dev'",
     "build": "yarn lint && yarn test && yarn clean && echo 'Build...' && tsc && echo 'completed'",
     "clean": "rm -rf ./dist",
+    "dev": "NODE_ENV=development ts-node src/app.ts",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "start": "NODE_ENV=production node .",
-    "test": "NODE_ENV=test jasmine-ts"
+    "test": "NODE_ENV=test jasmine-ts",
+    "watch": "nodemon --ext ts --exec 'yarn lint && yarn test && yarn dev'"
   },
   "devDependencies": {
     "@types/jasmine": "^3.5.11",
@@ -35,6 +41,7 @@
     "jasmine": "^3.5.0",
     "jasmine-ts": "^0.3.0",
     "jasmine-ts-console-reporter": "^3.1.1",
+    "nodemon": "^2.0.4",
     "prettier": "^2.0.5",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.6"
