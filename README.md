@@ -3,7 +3,6 @@
 ## Table of content
 
 - [ROBOT CLEANER](#robot-cleaner)
-  - [Table of content](#table-of-content)
   - [Introduction](#introduction)
   - [Prerequisite](#prerequisite)
   - [Build the app](#build-the-app)
