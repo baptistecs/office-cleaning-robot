@@ -9,6 +9,7 @@
   - [Run the app in a production environment](#run-the-app-in-a-production-environment)
   - [Run the app in a development environment](#run-the-app-in-a-development-environment)
   - [Test](#test)
+  - [TODO](#todo)
 
 ## Introduction
 
@@ -92,5 +93,14 @@ Or directly without using yarn:
 - Run Jasmine-ts:
 
 `yarn test`
+
+[⇧ Table of content ⇧](#table-of-content)
+
+## TODO
+
+- Split Map2d addLine method in two methods "addHorizontalLine" and "addVerticalLine" and update addLine for using those
+- Implement "onMoveHorizontal" and "onMoveVertical" callbacks in the Robot constructor so we can call directly the Map2d previous methods
+- Add test coverage report generation
+- Display logs (warn & error) only if process.env.NODE_ENV == 'development'
 
 [⇧ Table of content ⇧](#table-of-content)
